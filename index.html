@@ -1,161 +1,209 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Al Barkat Global Trading | Allah Tawakkal Variety Store</title>
-  <meta name="description" content="Al Barkat Global Trading - Your trusted variety store in Lahore. Quality Kitchenware, Home Decor, Electronics & more."/>
+  <meta name="description" content="Al Barkat Global Trading - Quality Kitchenware, Home Decor, Electronics & more. Shop in Lahore or online via Daraz."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:wght@300;400;600&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --green-deep:#0d4f2a;--green-main:#155f35;--green-mid:#1e7e48;--green-light:#2a9d5c;
-      --gold-bright:#d4a017;--gold-main:#b8860b;--gold-soft:#e8c56a;--gold-pale:#f5e4a8;
-      --white:#ffffff;--off-white:#fafaf6;--cream:#f7f1e3;
-      --text-dark:#1a1a1a;--text-mid:#3a3a3a;
-      --shadow-green:rgba(13,79,42,0.18);--shadow-gold:rgba(180,134,11,0.22);
-    }
+    :root{--gd:#0d4f2a;--gm:#155f35;--gi:#1e7e48;--gb:#d4a017;--gs:#b8860b;--go:#e8c56a;--gp:#f5e4a8;--w:#fff;--ow:#fafaf6;--cr:#f7f1e3;--td:#1a1a1a;--tm:#3a3a3a;--sg:rgba(13,79,42,0.18);--so:rgba(180,134,11,0.22);}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     html{scroll-behavior:smooth;}
-    body{font-family:'Crimson Pro',Georgia,serif;background:var(--off-white);color:var(--text-dark);overflow-x:hidden;}
-    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:70px;background:rgba(13,79,42,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-main);box-shadow:0 2px 20px var(--shadow-green);}
+    body{font-family:'Crimson Pro',Georgia,serif;background:var(--ow);color:var(--td);overflow-x:hidden;}
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:70px;background:rgba(13,79,42,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gs);box-shadow:0 2px 20px var(--sg);}
     .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
-    .nav-logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-family:'Cinzel',serif;color:var(--green-deep);font-weight:900;box-shadow:0 0 12px var(--shadow-gold);flex-shrink:0;}
-    .nav-brand-en{font-family:'Cinzel',serif;font-size:0.85rem;font-weight:700;color:var(--gold-soft);letter-spacing:0.08em;line-height:1.1;display:block;}
-    .nav-brand-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.75rem;color:var(--gold-pale);line-height:1.3;display:block;}
+    .nav-logo{width:44px;height:44px;background:linear-gradient(135deg,var(--gb),var(--gs));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.4rem;font-weight:900;color:var(--gd);box-shadow:0 0 12px var(--so);flex-shrink:0;}
+    .nav-en{font-family:'Cinzel',serif;font-size:0.85rem;font-weight:700;color:var(--go);letter-spacing:0.08em;display:block;}
+    .nav-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.75rem;color:var(--gp);display:block;}
     .nav-links{display:flex;gap:28px;align-items:center;}
-    .nav-links a{color:var(--gold-soft);text-decoration:none;font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.1em;font-weight:600;transition:color 0.3s;text-transform:uppercase;}
-    .nav-links a:hover{color:var(--gold-bright);}
-    .nav-cta{background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));color:var(--green-deep)!important;padding:8px 18px;border-radius:4px;font-weight:700!important;transition:transform 0.2s,box-shadow 0.2s!important;}
-    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 16px var(--shadow-gold);}
+    .nav-links a{color:var(--go);text-decoration:none;font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.1em;font-weight:600;transition:color 0.3s;text-transform:uppercase;}
+    .nav-links a:hover{color:var(--gb);}
+    .nav-cta{background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd)!important;padding:8px 18px;border-radius:4px;font-weight:700!important;}
     .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
-    .hamburger span{width:26px;height:2px;background:var(--gold-soft);border-radius:2px;transition:0.3s;}
-    #hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden;background-color:var(--green-deep);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d4a01730' stroke-width='0.8'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22'/%3E%3Cpolygon points='40,14 66,28 66,52 40,66 14,52 14,28'/%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='22' x2='76' y2='58'/%3E%3Cline x1='4' y1='58' x2='76' y2='22'/%3E%3C/g%3E%3C/svg%3E");}
-    .hero-bismillah{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--gold-soft);margin-bottom:18px;opacity:0;animation:fadeUp 0.8s ease 0.2s forwards;}
-    .hero-divider-gold{width:120px;height:1px;background:linear-gradient(to right,transparent,var(--gold-bright),transparent);margin:0 auto 28px;opacity:0;animation:fadeUp 0.8s ease 0.35s forwards;}
-    .hero-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.5rem,4vw,2.5rem);color:var(--white);line-height:1.6;margin-bottom:10px;opacity:0;animation:fadeUp 0.8s ease 0.45s forwards;}
-    .hero-title-en{font-family:'Cinzel',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:900;color:var(--white);line-height:1.1;opacity:0;animation:fadeUp 0.8s ease 0.55s forwards;}
-    .hero-title-en span{color:var(--gold-bright);}
-    .hero-subtitle{font-family:'Cinzel',serif;font-size:clamp(0.8rem,1.8vw,1rem);color:var(--gold-pale);letter-spacing:0.2em;text-transform:uppercase;margin:18px 0;opacity:0;animation:fadeUp 0.8s ease 0.65s forwards;}
+    .hamburger span{width:26px;height:2px;background:var(--go);border-radius:2px;}
+    /* HERO */
+    #hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;background-color:var(--gd);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d4a01730' stroke-width='0.8'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22'/%3E%3Cpolygon points='40,14 66,28 66,52 40,66 14,52 14,28'/%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='22' x2='76' y2='58'/%3E%3Cline x1='4' y1='58' x2='76' y2='22'/%3E%3C/g%3E%3C/svg%3E");}
+    .hero-bism{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.4rem,3vw,2rem);color:var(--go);margin-bottom:18px;opacity:0;animation:fadeUp 0.8s ease 0.2s forwards;}
+    .hero-div{width:120px;height:1px;background:linear-gradient(to right,transparent,var(--gb),transparent);margin:0 auto 28px;opacity:0;animation:fadeUp 0.8s ease 0.35s forwards;}
+    .hero-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.5rem,4vw,2.5rem);color:var(--w);line-height:1.6;margin-bottom:10px;opacity:0;animation:fadeUp 0.8s ease 0.45s forwards;}
+    .hero-en{font-family:'Cinzel',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:900;color:var(--w);line-height:1.1;opacity:0;animation:fadeUp 0.8s ease 0.55s forwards;}
+    .hero-en span{color:var(--gb);}
+    .hero-sub{font-family:'Cinzel',serif;font-size:clamp(0.8rem,1.8vw,1rem);color:var(--gp);letter-spacing:0.2em;text-transform:uppercase;margin:18px 0;opacity:0;animation:fadeUp 0.8s ease 0.65s forwards;}
     .hero-desc{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,0.75);max-width:600px;line-height:1.8;margin:0 auto 36px;opacity:0;animation:fadeUp 0.8s ease 0.75s forwards;}
     .hero-desc .ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1.1rem;direction:rtl;display:block;margin-top:8px;}
     .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease 0.9s forwards;}
-    .btn-primary{background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));color:var(--green-deep);padding:14px 32px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px var(--shadow-gold);}
-    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 28px var(--shadow-gold);}
-    .btn-secondary{border:1.5px solid var(--gold-soft);color:var(--gold-soft);padding:14px 32px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;transition:background 0.3s,color 0.3s;}
-    .btn-secondary:hover{background:rgba(212,160,23,0.15);color:var(--white);}
+    .btn-p{background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd);padding:14px 32px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px var(--so);}
+    .btn-p:hover{transform:translateY(-3px);box-shadow:0 8px 28px var(--so);}
+    .btn-s{border:1.5px solid var(--go);color:var(--go);padding:14px 32px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;transition:background 0.3s,color 0.3s;}
+    .btn-s:hover{background:rgba(212,160,23,0.15);color:var(--w);}
     .hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;animation:fadeUp 0.8s ease 1.1s forwards;}
-    .hero-scroll span{font-family:'Cinzel',serif;font-size:0.65rem;color:var(--gold-pale);letter-spacing:0.15em;}
-    .scroll-arrow{width:20px;height:20px;border-right:2px solid var(--gold-soft);border-bottom:2px solid var(--gold-soft);transform:rotate(45deg);animation:bounce 1.5s infinite;}
+    .hero-scroll span{font-family:'Cinzel',serif;font-size:0.65rem;color:var(--gp);letter-spacing:0.15em;}
+    .scroll-arr{width:20px;height:20px;border-right:2px solid var(--go);border-bottom:2px solid var(--go);transform:rotate(45deg);animation:bounce 1.5s infinite;}
+    /* SECTIONS */
     section{padding:80px 5%;}
-    .section-header{text-align:center;margin-bottom:56px;}
-    .section-tag{display:inline-block;font-family:'Cinzel',serif;font-size:0.7rem;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--green-main);margin-bottom:12px;}
-    .section-tag-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gold-main);display:block;margin-bottom:6px;}
-    .section-title{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--green-deep);line-height:1.15;}
-    .section-title span{color:var(--gold-main);}
-    .section-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.2rem,2.5vw,1.8rem);color:var(--green-mid);display:block;margin-top:6px;}
-    .section-rule{width:80px;height:2px;margin:18px auto 0;background:linear-gradient(to right,var(--gold-bright),var(--gold-main));}
-    #stats{background:linear-gradient(135deg,var(--green-deep),var(--green-main));padding:50px 5%;}
+    .sec-hd{text-align:center;margin-bottom:56px;}
+    .sec-tag{display:inline-block;font-family:'Cinzel',serif;font-size:0.7rem;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:var(--gm);margin-bottom:12px;}
+    .sec-tag-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gs);display:block;margin-bottom:6px;}
+    .sec-title{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--gd);line-height:1.15;}
+    .sec-title span{color:var(--gs);}
+    .sec-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);color:var(--gi);display:block;margin-top:6px;}
+    .sec-rule{width:80px;height:2px;margin:18px auto 0;background:linear-gradient(to right,var(--gb),var(--gs));}
+    /* STATS */
+    #stats{background:linear-gradient(135deg,var(--gd),var(--gm));padding:50px 5%;}
     .stats-grid{display:flex;justify-content:center;gap:60px;flex-wrap:wrap;}
-    .stat-item{text-align:center;}
-    .stat-num{font-family:'Cinzel',serif;font-size:2.5rem;font-weight:900;color:var(--gold-bright);line-height:1;}
-    .stat-label{font-family:'Crimson Pro',serif;font-size:0.95rem;color:var(--gold-pale);margin-top:4px;}
-    .stat-label-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.85rem;color:rgba(245,228,168,0.7);}
-    #about{background:var(--cream);}
+    .stat-num{font-family:'Cinzel',serif;font-size:2.5rem;font-weight:900;color:var(--gb);line-height:1;}
+    .stat-lbl{font-size:0.95rem;color:var(--gp);margin-top:4px;}
+    .stat-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.85rem;color:rgba(245,228,168,0.7);}
+    /* ABOUT */
+    #about{background:var(--cr);}
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1100px;margin:0 auto;}
-    .about-hex{width:280px;height:280px;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;box-shadow:0 20px 60px var(--shadow-green);}
-    .about-hex-text{font-family:'Noto Nastaliq Urdu',serif;font-size:1.3rem;color:var(--gold-soft);line-height:1.7;}
-    .about-hex-en{font-family:'Cinzel',serif;font-size:0.75rem;color:var(--gold-pale);margin-top:8px;letter-spacing:0.1em;}
-    .about-visual{display:flex;align-items:center;justify-content:center;}
-    .about-text-en{font-size:1.1rem;line-height:1.9;color:var(--text-mid);margin-bottom:20px;}
-    .about-text-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1.15rem;line-height:2.2;color:var(--green-deep);direction:rtl;text-align:right;border-right:3px solid var(--gold-bright);padding-right:16px;margin-bottom:28px;}
-    .about-features{display:flex;flex-direction:column;gap:12px;}
-    .about-feature{display:flex;align-items:center;gap:12px;font-family:'Crimson Pro',serif;font-size:1rem;color:var(--text-mid);}
-    .about-feature-icon{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;color:var(--green-deep);}
-    #products{background:var(--off-white);}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;max-width:1200px;margin:0 auto;}
-    .product-card{background:var(--white);border-radius:8px;border:1px solid rgba(180,134,11,0.15);overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.06);transition:transform 0.3s,box-shadow 0.3s;}
-    .product-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px var(--shadow-green);}
-    .product-card-header{background:linear-gradient(135deg,var(--green-deep),var(--green-main));padding:28px 24px 20px;position:relative;overflow:hidden;}
-    .product-card-header::after{content:'';position:absolute;bottom:-20px;right:-20px;width:80px;height:80px;background:rgba(212,160,23,0.12);border-radius:50%;}
-    .product-icon{font-size:2.2rem;margin-bottom:10px;}
-    .product-title-en{font-family:'Cinzel',serif;font-size:1rem;font-weight:700;color:var(--gold-soft);letter-spacing:0.05em;}
-    .product-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gold-pale);direction:rtl;margin-top:4px;}
-    .product-card-body{padding:20px 24px;}
-    .product-list{list-style:none;}
-    .product-list li{padding:6px 0;border-bottom:1px solid rgba(180,134,11,0.1);font-size:0.95rem;color:var(--text-mid);display:flex;align-items:flex-start;gap:8px;}
-    .product-list li:last-child{border-bottom:none;}
-    .product-list li::before{content:'◆';color:var(--gold-main);font-size:0.5rem;margin-top:7px;flex-shrink:0;}
-    #why{background:var(--cream);}
+    .about-hex{width:280px;height:280px;background:linear-gradient(135deg,var(--gd),var(--gi));clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;box-shadow:0 20px 60px var(--sg);margin:auto;}
+    .hex-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1.3rem;color:var(--go);line-height:1.7;}
+    .hex-en{font-family:'Cinzel',serif;font-size:0.75rem;color:var(--gp);margin-top:8px;letter-spacing:0.1em;}
+    .about-en{font-size:1.1rem;line-height:1.9;color:var(--tm);margin-bottom:20px;}
+    .about-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1.15rem;line-height:2.2;color:var(--gd);direction:rtl;text-align:right;border-right:3px solid var(--gb);padding-right:16px;margin-bottom:28px;}
+    .feat{display:flex;align-items:center;gap:12px;font-size:1rem;color:var(--tm);margin-bottom:12px;}
+    .feat-ic{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gb),var(--gs));display:flex;align-items:center;justify-content:center;font-size:0.9rem;flex-shrink:0;color:var(--gd);}
+    /* PRODUCTS */
+    #products{background:var(--ow);}
+    .prod-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px;}
+    .prod-tab{padding:8px 20px;border-radius:50px;border:1.5px solid rgba(21,95,53,0.3);font-family:'Cinzel',serif;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;cursor:pointer;transition:all 0.3s;background:var(--w);color:var(--gm);}
+    .prod-tab.active,.prod-tab:hover{background:var(--gd);color:var(--go);border-color:var(--gd);}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;max-width:1200px;margin:0 auto;}
+    .prod-card{background:var(--w);border-radius:10px;border:1px solid rgba(180,134,11,0.15);overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s,box-shadow 0.3s;display:flex;flex-direction:column;}
+    .prod-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px var(--sg);}
+    .prod-card-top{background:linear-gradient(135deg,var(--gd),var(--gm));padding:22px 20px 16px;position:relative;overflow:hidden;}
+    .prod-card-top::after{content:'';position:absolute;bottom:-18px;right:-18px;width:70px;height:70px;background:rgba(212,160,23,0.12);border-radius:50%;}
+    .prod-icon{font-size:2rem;margin-bottom:8px;}
+    .prod-cat{font-family:'Cinzel',serif;font-size:0.78rem;font-weight:700;color:var(--go);letter-spacing:0.06em;}
+    .prod-cat-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.8rem;color:var(--gp);direction:rtl;margin-top:3px;}
+    .prod-body{padding:16px 18px;flex:1;display:flex;flex-direction:column;}
+    .prod-name{font-family:'Cinzel',serif;font-size:0.95rem;font-weight:700;color:var(--gd);margin-bottom:6px;}
+    .prod-desc{font-size:0.92rem;color:var(--tm);line-height:1.6;flex:1;}
+    .prod-price{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:var(--gs);margin-top:12px;}
+    .prod-avail{display:inline-block;font-size:0.72rem;padding:3px 10px;border-radius:50px;margin-top:6px;}
+    .avail-yes{background:rgba(21,95,53,0.1);color:var(--gm);}
+    .avail-no{background:rgba(200,0,0,0.08);color:#c00;}
+    .prod-wa{display:block;text-align:center;margin-top:12px;padding:9px;border-radius:6px;background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd);font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;text-decoration:none;letter-spacing:0.08em;transition:opacity 0.2s;}
+    .prod-wa:hover{opacity:0.85;}
+    .prod-loading{text-align:center;padding:60px;color:var(--gm);font-family:'Cinzel',serif;font-size:1rem;letter-spacing:0.1em;grid-column:1/-1;}
+    .prod-empty{text-align:center;padding:60px;color:var(--tm);grid-column:1/-1;}
+    /* WHY */
+    #why{background:var(--cr);}
     .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;max-width:1100px;margin:0 auto;}
-    .why-card{background:var(--white);padding:36px 28px;border-radius:8px;text-align:center;border-bottom:3px solid var(--gold-main);box-shadow:0 4px 20px rgba(0,0,0,0.05);transition:transform 0.3s;}
+    .why-card{background:var(--w);padding:36px 28px;border-radius:8px;text-align:center;border-bottom:3px solid var(--gs);box-shadow:0 4px 20px rgba(0,0,0,0.05);transition:transform 0.3s;}
     .why-card:hover{transform:translateY(-4px);}
-    .why-icon{font-size:2.5rem;margin-bottom:16px;}
-    .why-title-en{font-family:'Cinzel',serif;font-size:1rem;font-weight:700;color:var(--green-deep);margin-bottom:6px;}
-    .why-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gold-main);margin-bottom:12px;display:block;}
-    .why-desc{font-size:0.95rem;color:var(--text-mid);line-height:1.7;}
-    #stores{background:var(--green-deep);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d4a01720' stroke-width='0.8'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22'/%3E%3Cpolygon points='40,14 66,28 66,52 40,66 14,52 14,28'/%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='22' x2='76' y2='58'/%3E%3Cline x1='4' y1='58' x2='76' y2='22'/%3E%3C/g%3E%3C/svg%3E");}
+    .why-ic{font-size:2.5rem;margin-bottom:16px;}
+    .why-en{font-family:'Cinzel',serif;font-size:1rem;font-weight:700;color:var(--gd);margin-bottom:6px;}
+    .why-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gs);margin-bottom:12px;display:block;}
+    .why-desc{font-size:0.95rem;color:var(--tm);line-height:1.7;}
+    /* STORES */
+    #stores{background:var(--gd);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23d4a01720' stroke-width='0.8'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22'/%3E%3Cpolygon points='40,14 66,28 66,52 40,66 14,52 14,28'/%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='22' x2='76' y2='58'/%3E%3Cline x1='4' y1='58' x2='76' y2='22'/%3E%3C/g%3E%3C/svg%3E");}
     .stores-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;max-width:1000px;margin:0 auto;}
     .store-card{background:rgba(255,255,255,0.07);border:1px solid rgba(212,160,23,0.3);border-radius:8px;padding:36px 28px;text-align:center;transition:background 0.3s,transform 0.3s;}
     .store-card:hover{background:rgba(255,255,255,0.12);transform:translateY(-4px);}
-    .store-icon{font-size:2.8rem;margin-bottom:16px;}
-    .store-title-en{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:var(--gold-soft);margin-bottom:4px;}
-    .store-title-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.95rem;color:var(--gold-pale);display:block;margin-bottom:14px;}
+    .store-ic{font-size:2.8rem;margin-bottom:16px;}
+    .store-en{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:var(--go);margin-bottom:4px;}
+    .store-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.95rem;color:var(--gp);display:block;margin-bottom:14px;}
     .store-desc{font-size:0.95rem;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:20px;}
-    .store-btn{display:inline-block;padding:10px 28px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));color:var(--green-deep);transition:transform 0.2s;}
+    .store-btn{display:inline-block;padding:10px 28px;border-radius:4px;font-family:'Cinzel',serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-decoration:none;text-transform:uppercase;background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd);transition:transform 0.2s;}
     .store-btn:hover{transform:scale(1.04);}
-    #contact{background:var(--off-white);}
+    /* CONTACT */
+    #contact{background:var(--ow);}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1100px;margin:0 auto;align-items:start;}
-    .contact-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:28px;}
-    .contact-item-icon{width:46px;height:46px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,var(--green-deep),var(--green-mid));display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
-    .contact-item-label{font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;color:var(--gold-main);letter-spacing:0.12em;text-transform:uppercase;}
-    .contact-item-val{font-size:1rem;color:var(--text-mid);line-height:1.6;}
-    .contact-item-val a{color:var(--green-main);text-decoration:none;}
-    .contact-item-val a:hover{color:var(--gold-main);}
-    .social-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;}
-    .social-btn{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:6px;text-decoration:none;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;transition:transform 0.2s,box-shadow 0.2s;border:1.5px solid;}
-    .social-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.15);}
+    .ci{display:flex;gap:16px;align-items:flex-start;margin-bottom:28px;}
+    .ci-ic{width:46px;height:46px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,var(--gd),var(--gi));display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+    .ci-lbl{font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;color:var(--gs);letter-spacing:0.12em;text-transform:uppercase;}
+    .ci-val{font-size:1rem;color:var(--tm);line-height:1.7;}
+    .ci-val a{color:var(--gm);text-decoration:none;}
+    .ci-val a:hover{color:var(--gs);}
+    .soc-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;}
+    .soc-btn{display:flex;align-items:center;gap:7px;padding:9px 16px;border-radius:6px;text-decoration:none;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;transition:transform 0.2s;border:1.5px solid;}
+    .soc-btn:hover{transform:translateY(-2px);}
     .soc-fb{border-color:#1877f2;color:#1877f2;}
     .soc-ig{border-color:#e1306c;color:#e1306c;}
-    .soc-tt{border-color:#010101;color:#333;}
+    .soc-tt{border-color:#333;color:#333;}
     .soc-li{border-color:#0a66c2;color:#0a66c2;}
-    .soc-wa{border-color:#25d366;color:#25d366;background:rgba(37,211,102,0.06);}
-    .map-placeholder{background:linear-gradient(135deg,var(--green-deep),var(--green-main));height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-radius:8px;border:2px solid rgba(180,134,11,0.2);box-shadow:0 8px 32px var(--shadow-green);}
-    .map-pin{font-size:3rem;}
-    .map-addr{font-family:'Cinzel',serif;font-size:0.85rem;color:var(--gold-pale);text-align:center;letter-spacing:0.05em;padding:0 20px;line-height:1.7;}
-    .map-addr-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--gold-soft);direction:rtl;margin-top:6px;}
-    .map-gmaps-btn{display:inline-block;padding:10px 24px;background:linear-gradient(135deg,var(--gold-bright),var(--gold-main));color:var(--green-deep);border-radius:4px;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;text-decoration:none;letter-spacing:0.1em;margin-top:8px;}
+    .soc-wa{border-color:#25d366;color:#25d366;}
+    .map-box{background:linear-gradient(135deg,var(--gd),var(--gm));border-radius:8px;padding:40px 28px;text-align:center;border:2px solid rgba(180,134,11,0.2);box-shadow:0 8px 32px var(--sg);}
+    .map-pin{font-size:3rem;margin-bottom:12px;}
+    .map-addr{font-family:'Cinzel',serif;font-size:0.85rem;color:var(--gp);line-height:1.8;margin-bottom:8px;}
+    .map-addr-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:0.9rem;color:var(--go);direction:rtl;margin-top:6px;margin-bottom:20px;display:block;}
+    .map-btn{display:inline-block;padding:10px 24px;background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd);border-radius:4px;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:700;text-decoration:none;letter-spacing:0.1em;}
+    /* FOOTER */
     footer{background:#080d08;border-top:1px solid rgba(212,160,23,0.25);padding:50px 5% 28px;}
-    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
-    .footer-brand-name{font-family:'Cinzel',serif;font-size:1.2rem;font-weight:900;color:var(--gold-soft);margin-bottom:4px;}
-    .footer-brand-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1rem;color:var(--gold-pale);}
-    .footer-tagline{font-size:0.9rem;color:rgba(255,255,255,0.5);margin-top:12px;line-height:1.7;}
-    .footer-col-title{font-family:'Cinzel',serif;font-size:0.78rem;font-weight:700;color:var(--gold-main);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;}
-    .footer-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
-    .footer-links a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
-    .footer-links a:hover{color:var(--gold-soft);}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-    .footer-copy{font-size:0.85rem;color:rgba(255,255,255,0.35);}
-    .footer-copy span{color:var(--gold-main);}
-    .footer-love{font-size:0.85rem;color:rgba(255,255,255,0.35);}
-    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,0.45);text-decoration:none;font-size:1.7rem;transition:transform 0.3s,box-shadow 0.3s;animation:pulse-wa 2.5s infinite;}
-    .wa-float:hover{transform:scale(1.12);box-shadow:0 10px 32px rgba(37,211,102,0.6);}
+    .ft-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+    .ft-name{font-family:'Cinzel',serif;font-size:1.2rem;font-weight:900;color:var(--go);margin-bottom:4px;}
+    .ft-ur{font-family:'Noto Nastaliq Urdu',serif;font-size:1rem;color:var(--gp);}
+    .ft-tag{font-size:0.9rem;color:rgba(255,255,255,0.5);margin-top:12px;line-height:1.7;}
+    .ft-col-t{font-family:'Cinzel',serif;font-size:0.78rem;font-weight:700;color:var(--gs);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;}
+    .ft-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
+    .ft-links a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
+    .ft-links a:hover{color:var(--go);}
+    .ft-bot{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .ft-copy{font-size:0.85rem;color:rgba(255,255,255,0.35);}
+    .ft-copy span{color:var(--gs);}
+    /* WA FLOAT */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,0.45);text-decoration:none;font-size:1.7rem;transition:transform 0.3s;animation:pulse-wa 2.5s infinite;}
+    .wa-float:hover{transform:scale(1.12);}
+
+    /* ═══ ADMIN PANEL ═══ */
+    #admin-trigger{position:fixed;bottom:28px;left:28px;z-index:999;width:44px;height:44px;border-radius:50%;background:rgba(13,79,42,0.7);border:1px solid var(--gs);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:background 0.3s;}
+    #admin-trigger:hover{background:var(--gd);}
+    #admin-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);}
+    #admin-overlay.open{display:flex;align-items:center;justify-content:center;}
+    .admin-box{background:var(--w);border-radius:12px;width:90%;max-width:560px;max-height:90vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,0.35);}
+    .admin-head{background:linear-gradient(135deg,var(--gd),var(--gm));padding:22px 28px;display:flex;justify-content:space-between;align-items:center;border-radius:12px 12px 0 0;}
+    .admin-head h2{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--go);letter-spacing:0.08em;}
+    .admin-close{background:none;border:none;color:var(--go);font-size:1.4rem;cursor:pointer;}
+    .admin-login{padding:32px 28px;}
+    .admin-login p{font-family:'Cinzel',serif;font-size:0.8rem;color:var(--tm);margin-bottom:20px;letter-spacing:0.05em;}
+    .admin-body{padding:24px 28px;}
+    .form-grp{margin-bottom:18px;}
+    .form-grp label{display:block;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:700;color:var(--gm);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+    .form-grp input,.form-grp select,.form-grp textarea{width:100%;padding:10px 14px;border:1.5px solid #ddd;border-radius:6px;font-family:'Crimson Pro',serif;font-size:1rem;color:var(--td);transition:border-color 0.2s;outline:none;}
+    .form-grp input:focus,.form-grp select:focus,.form-grp textarea:focus{border-color:var(--gm);}
+    .form-grp textarea{height:80px;resize:vertical;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .admin-btn{width:100%;padding:12px;border:none;border-radius:6px;font-family:'Cinzel',serif;font-size:0.85rem;font-weight:700;letter-spacing:0.1em;cursor:pointer;transition:opacity 0.2s;}
+    .admin-btn-p{background:linear-gradient(135deg,var(--gb),var(--gs));color:var(--gd);}
+    .admin-btn-p:hover{opacity:0.88;}
+    .admin-btn-s{background:var(--gd);color:var(--go);margin-top:10px;}
+    .admin-btn-s:hover{opacity:0.88;}
+    .admin-msg{text-align:center;padding:10px;border-radius:6px;font-family:'Cinzel',serif;font-size:0.8rem;margin-top:12px;display:none;}
+    .msg-ok{background:rgba(21,95,53,0.1);color:var(--gm);}
+    .msg-err{background:rgba(200,0,0,0.08);color:#c00;}
+    .prod-list-admin{margin-top:24px;border-top:1px solid #eee;padding-top:20px;}
+    .prod-list-admin h3{font-family:'Cinzel',serif;font-size:0.85rem;color:var(--gd);letter-spacing:0.1em;margin-bottom:14px;}
+    .admin-prod-item{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border:1px solid #eee;border-radius:6px;margin-bottom:8px;}
+    .api-name{font-family:'Cinzel',serif;font-size:0.82rem;color:var(--td);}
+    .api-cat{font-size:0.78rem;color:var(--tm);}
+    .api-del{background:rgba(200,0,0,0.08);color:#c00;border:none;border-radius:4px;padding:5px 12px;font-size:0.75rem;cursor:pointer;font-family:'Cinzel',serif;}
+    .api-del:hover{background:rgba(200,0,0,0.18);}
+    .tabs-admin{display:flex;gap:8px;margin-bottom:20px;}
+    .tab-a{padding:7px 18px;border-radius:50px;border:1.5px solid var(--gm);font-family:'Cinzel',serif;font-size:0.72rem;font-weight:700;cursor:pointer;background:none;color:var(--gm);}
+    .tab-a.active{background:var(--gd);color:var(--go);border-color:var(--gd);}
+
+    /* ANIMATIONS */
     @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
     @keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0);}50%{transform:rotate(45deg) translateY(6px);}}
     @keyframes pulse-wa{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.45);}50%{box-shadow:0 6px 36px rgba(37,211,102,0.7);}}
-    @media(max-width:900px){.about-grid{grid-template-columns:1fr;}.about-visual{display:none;}.contact-grid{grid-template-columns:1fr;}.footer-top{grid-template-columns:1fr 1fr;}}
-    @media(max-width:650px){.nav-links{display:none;}.hamburger{display:flex;}.footer-top{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}.hero-btns{flex-direction:column;align-items:center;}.stats-grid{gap:30px;}.nav-links.open{display:flex;flex-direction:column;gap:16px;position:fixed;top:70px;left:0;right:0;background:var(--green-deep);padding:24px 5%;border-bottom:1px solid var(--gold-main);}}
+    /* RESPONSIVE */
+    @media(max-width:900px){.about-grid{grid-template-columns:1fr;}.contact-grid{grid-template-columns:1fr;}.ft-top{grid-template-columns:1fr 1fr;}}
+    @media(max-width:650px){.nav-links{display:none;}.hamburger{display:flex;}.ft-top{grid-template-columns:1fr;}.ft-bot{flex-direction:column;text-align:center;}.hero-btns{flex-direction:column;align-items:center;}.stats-grid{gap:30px;}.nav-links.open{display:flex;flex-direction:column;gap:16px;position:fixed;top:70px;left:0;right:0;background:var(--gd);padding:24px 5%;border-bottom:1px solid var(--gs);z-index:999;}.form-row{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
-<nav id="navbar">
+
+<!-- NAV -->
+<nav>
   <a class="nav-brand" href="#hero">
-    <div class="nav-logo-icon">A</div>
-    <div>
-      <span class="nav-brand-en">Al Barkat Global Trading</span>
-      <span class="nav-brand-ur">البرکت گلوبل ٹریڈنگ</span>
-    </div>
+    <div class="nav-logo">A</div>
+    <div><span class="nav-en">Al Barkat Global Trading</span><span class="nav-ur">البرکت گلوبل ٹریڈنگ</span></div>
   </a>
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a>
@@ -164,266 +212,383 @@
     <a href="#contact">Contact</a>
     <a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank" class="nav-cta">Shop on Daraz</a>
   </div>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
-  <p class="hero-bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-  <div class="hero-divider-gold"></div>
-  <p class="hero-title-ur">اللہ توکل ورائٹی اسٹور</p>
-  <h1 class="hero-title-en">Allah Tawakkal<br/><span>Variety Store</span></h1>
-  <p class="hero-subtitle">Al Barkat Global Trading · Lahore, Pakistan</p>
-  <p class="hero-desc">
-    Quality products for every home. From beautiful kitchenware to elegant home décor.
-    <span class="ur">ہر گھر کے لیے معیاری مصنوعات — کچن کے برتن سے لے کر گھر کی سجاوٹ تک۔</span>
-  </p>
+  <p class="hero-bism">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+  <div class="hero-div"></div>
+  <p class="hero-ur">اللہ توکل ورائٹی اسٹور</p>
+  <h1 class="hero-en">Allah Tawakkal<br/><span>Variety Store</span></h1>
+  <p class="hero-sub">Al Barkat Global Trading · Lahore, Pakistan</p>
+  <p class="hero-desc">Quality products for every home. From beautiful kitchenware to elegant home décor.<span class="ur">ہر گھر کے لیے معیاری مصنوعات — کچن کے برتن سے لے کر گھر کی سجاوٹ تک۔</span></p>
   <div class="hero-btns">
-    <a href="#products" class="btn-primary">Explore Products</a>
-    <a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank" class="btn-secondary">Visit Daraz Store</a>
+    <a href="#products" class="btn-p">Explore Products</a>
+    <a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank" class="btn-s">Visit Daraz Store</a>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-arrow"></div>
-    <span>Scroll Down</span>
-  </div>
+  <div class="hero-scroll"><div class="scroll-arr"></div><span>Scroll Down</span></div>
 </section>
 
+<!-- STATS -->
 <section id="stats">
   <div class="stats-grid">
-    <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Products Available</div><div class="stat-label-ur">مصنوعات دستیاب</div></div>
-    <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Product Categories</div><div class="stat-label-ur">مصنوعات کی اقسام</div></div>
-    <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Stores (Physical & Online)</div><div class="stat-label-ur">اسٹور (فزیکل اور آن لائن)</div></div>
-    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Customer Satisfaction</div><div class="stat-label-ur">گاہک کی اطمینان</div></div>
+    <div class="stat-item"><div class="stat-num" id="stat-prod">...</div><div class="stat-lbl">Products Available</div><div class="stat-ur">مصنوعات دستیاب</div></div>
+    <div class="stat-item"><div class="stat-num">5</div><div class="stat-lbl">Product Categories</div><div class="stat-ur">مصنوعات کی اقسام</div></div>
+    <div class="stat-item"><div class="stat-num">2</div><div class="stat-lbl">Stores (Physical & Online)</div><div class="stat-ur">اسٹور</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-lbl">Customer Satisfaction</div><div class="stat-ur">گاہک کی اطمینان</div></div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-  <div class="section-header">
-    <span class="section-tag-ur">ہمارے بارے میں</span>
-    <span class="section-tag">About Us</span>
-    <h2 class="section-title">Trusted Quality, <span>Blessed Business</span><span class="section-title-ur">معیاری مصنوعات، بابرکت تجارت</span></h2>
-    <div class="section-rule"></div>
+  <div class="sec-hd">
+    <span class="sec-tag-ur">ہمارے بارے میں</span>
+    <span class="sec-tag">About Us</span>
+    <h2 class="sec-title">Trusted Quality, <span>Blessed Business</span><span class="sec-title-ur">معیاری مصنوعات، بابرکت تجارت</span></h2>
+    <div class="sec-rule"></div>
   </div>
   <div class="about-grid">
-    <div class="about-visual">
-      <div class="about-hex">
-        <div class="about-hex-text">اللہ توکل<br/>ورائٹی اسٹور</div>
-        <div class="about-hex-en">Allah Tawakkal<br/>Variety Store</div>
-      </div>
-    </div>
+    <div class="about-hex"><div class="hex-ur">اللہ توکل<br/>ورائٹی اسٹور</div><div class="hex-en">Allah Tawakkal<br/>Variety Store</div></div>
     <div>
-      <p class="about-text-en">Al Barkat Global Trading is a Lahore-based business committed to bringing quality, variety, and value to every household. Under our physical brand <strong>Allah Tawakkal Variety Store</strong>, located at Madina Market, Ismail Nagar, Chungi Amar Sidhu, we serve our local community with a wide range of premium kitchenware, home décor, electronics, and more.</p>
-      <p class="about-text-ur">البرکت گلوبل ٹریڈنگ لاہور کا ایک قابل اعتماد کاروباری ادارہ ہے جو ہر گھر تک معیاری، متنوع اور سستی مصنوعات پہنچانے کے لیے پرعزم ہے۔ ہمارا فزیکل اسٹور مدینہ مارکیٹ، اسماعیل نگر، چنگی عامر سدھو، لاہور میں واقع ہے۔</p>
-      <div class="about-features">
-        <div class="about-feature"><div class="about-feature-icon">✓</div>Premium quality products at affordable prices</div>
-        <div class="about-feature"><div class="about-feature-icon">✓</div>Shop online via Daraz — delivery across Pakistan</div>
-        <div class="about-feature"><div class="about-feature-icon">✓</div>Trusted local store serving the Lahore community</div>
-        <div class="about-feature"><div class="about-feature-icon">✓</div>Kitchenware, Home Décor, Electronics & more</div>
-      </div>
+      <p class="about-en">Al Barkat Global Trading is a Lahore-based business committed to bringing quality, variety, and value to every household. Under our physical brand <strong>Allah Tawakkal Variety Store</strong>, located at Madina Market, Ismail Nagar, Chungi Amar Sidhu, we serve our local community with a wide range of premium kitchenware, home décor, electronics, and more.</p>
+      <p class="about-ur">البرکت گلوبل ٹریڈنگ لاہور کا ایک قابل اعتماد کاروباری ادارہ ہے جو ہر گھر تک معیاری اور سستی مصنوعات پہنچانے کے لیے پرعزم ہے۔</p>
+      <div class="feat"><div class="feat-ic">✓</div>Premium quality products at affordable prices</div>
+      <div class="feat"><div class="feat-ic">✓</div>Shop online via Daraz — delivery across Pakistan</div>
+      <div class="feat"><div class="feat-ic">✓</div>Trusted local store serving the Lahore community</div>
+      <div class="feat"><div class="feat-ic">✓</div>Kitchenware, Home Décor, Electronics & more</div>
     </div>
   </div>
 </section>
 
+<!-- PRODUCTS -->
 <section id="products">
-  <div class="section-header">
-    <span class="section-tag-ur">ہماری مصنوعات</span>
-    <span class="section-tag">Our Products</span>
-    <h2 class="section-title">Everything Your <span>Home Needs</span><span class="section-title-ur">آپ کے گھر کی ہر ضرورت</span></h2>
-    <div class="section-rule"></div>
+  <div class="sec-hd">
+    <span class="sec-tag-ur">ہماری مصنوعات</span>
+    <span class="sec-tag">Our Products</span>
+    <h2 class="sec-title">Everything Your <span>Home Needs</span><span class="sec-title-ur">آپ کے گھر کی ہر ضرورت</span></h2>
+    <div class="sec-rule"></div>
   </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="product-card-header"><div class="product-icon">🍽️</div><div class="product-title-en">Kitchenware & Dining</div><div class="product-title-ur">کچن کے برتن اور ڈائننگ</div></div>
-      <div class="product-card-body"><ul class="product-list">
-        <li>Tea Cup & Saucer Sets (Floral, Gold Trim, Blue Patterned)</li>
-        <li>Coffee Mugs (Character-themed, Souvenir, Striped)</li>
-        <li>Dinner Plates (Large, Medium, Side Plate sizes)</li>
-        <li>Serving Bowls (Nesting, Soup, Patterned Ceramic)</li>
-        <li>Serving Platters (Oval & Round Ceramic)</li>
-        <li>Casserole Dishes, Creamer & Sugar Pots</li>
-        <li>Gravy Boats & Decorative Pitchers</li>
-      </ul></div>
-    </div>
-    <div class="product-card">
-      <div class="product-card-header"><div class="product-icon">🧊</div><div class="product-title-en">Drinkware & Flasks</div><div class="product-title-ur">پانی کی بوتلیں اور فلاسک</div></div>
-      <div class="product-card-body"><ul class="product-list">
-        <li>Insulated Thermos Flasks (Red, Blue, Silver)</li>
-        <li>Water Bottles (Plastic & Metal Sport styles)</li>
-        <li>Gym Shaker Bottles (White/Green, Blue/Clear)</li>
-        <li>Travel Mugs (Stainless Steel, Novelty styles)</li>
-        <li>Glassware (Wine glasses, Fluted, Green Bottles)</li>
-      </ul></div>
-    </div>
-    <div class="product-card">
-      <div class="product-card-header"><div class="product-icon">🏡</div><div class="product-title-en">Home Décor & Collectibles</div><div class="product-title-ur">گھر کی سجاوٹ</div></div>
-      <div class="product-card-body"><ul class="product-list">
-        <li>Table Lamps (Pink, White & Blue Floral Shades)</li>
-        <li>Vases (Tall Fluted Glass, Ceramic Floral, Blue/Gold)</li>
-        <li>Figurines & Collectible Decoratives</li>
-        <li>Wall Art & Framed Illustrations</li>
-        <li>Picture Frames (Wooden, Gold-gilt, Light Oak)</li>
-        <li>Storage Tins & Decorative Ceramic Jars</li>
-        <li>Decorative Ceramic Boot Sets</li>
-      </ul></div>
-    </div>
-    <div class="product-card">
-      <div class="product-card-header"><div class="product-icon">🔌</div><div class="product-title-en">Electronics & Appliances</div><div class="product-title-ur">الیکٹرونکس</div></div>
-      <div class="product-card-body"><ul class="product-list">
-        <li>Stereo Receiver Systems</li>
-        <li>Bookshelf Speakers (Wooden Pair)</li>
-        <li>Digital Kitchen Scales (Silver/Black)</li>
-        <li>Mini Portable Sewing Machines</li>
-        <li>Universal Car Phone Holders</li>
-      </ul></div>
-    </div>
-    <div class="product-card">
-      <div class="product-card-header"><div class="product-icon">🧂</div><div class="product-title-en">Kitchen Accessories</div><div class="product-title-ur">کچن لوازمات</div></div>
-      <div class="product-card-body"><ul class="product-list">
-        <li>Salt & Pepper Grinders (Red Chef, Acrylic, Steel)</li>
-        <li>Ceramic Honey & Jam Pots (Lidded)</li>
-        <li>Wooden Bowls & Utensils (Hand-carved)</li>
-      </ul></div>
-    </div>
+  <div class="prod-tabs" id="prodTabs">
+    <button class="prod-tab active" onclick="filterProducts('all',this)">All Products</button>
+    <button class="prod-tab" onclick="filterProducts('Kitchenware & Dining',this)">🍽️ Kitchenware</button>
+    <button class="prod-tab" onclick="filterProducts('Drinkware & Flasks',this)">🧊 Drinkware</button>
+    <button class="prod-tab" onclick="filterProducts('Home Décor & Collectibles',this)">🏡 Home Décor</button>
+    <button class="prod-tab" onclick="filterProducts('Electronics & Appliances',this)">🔌 Electronics</button>
+    <button class="prod-tab" onclick="filterProducts('Kitchen Accessories',this)">🧂 Accessories</button>
+  </div>
+  <div class="products-grid" id="productsGrid">
+    <div class="prod-loading">⏳ Loading products from database...</div>
   </div>
 </section>
 
+<!-- WHY -->
 <section id="why">
-  <div class="section-header">
-    <span class="section-tag-ur">ہمیں کیوں چنیں</span>
-    <span class="section-tag">Why Choose Us</span>
-    <h2 class="section-title">The <span>Al Barkat</span> Difference<span class="section-title-ur">البرکت کی خاصیت</span></h2>
-    <div class="section-rule"></div>
+  <div class="sec-hd">
+    <span class="sec-tag-ur">ہمیں کیوں چنیں</span>
+    <span class="sec-tag">Why Choose Us</span>
+    <h2 class="sec-title">The <span>Al Barkat</span> Difference<span class="sec-title-ur">البرکت کی خاصیت</span></h2>
+    <div class="sec-rule"></div>
   </div>
   <div class="why-grid">
-    <div class="why-card"><div class="why-icon">💎</div><div class="why-title-en">Premium Quality</div><span class="why-title-ur">اعلیٰ معیار</span><p class="why-desc">Every product carefully selected for durability, beauty, and value.</p></div>
-    <div class="why-card"><div class="why-icon">💰</div><div class="why-title-en">Affordable Prices</div><span class="why-title-ur">مناسب قیمتیں</span><p class="why-desc">Quality should be accessible to everyone. Best prices, always.</p></div>
-    <div class="why-card"><div class="why-icon">🚚</div><div class="why-title-en">Nationwide Delivery</div><span class="why-title-ur">پورے پاکستان میں ڈیلیوری</span><p class="why-desc">Order on Daraz and get delivery to your doorstep across Pakistan.</p></div>
-    <div class="why-card"><div class="why-icon">🤝</div><div class="why-title-en">Trusted Service</div><span class="why-title-ur">قابل اعتماد خدمت</span><p class="why-desc">Serving the Lahore community with honesty, integrity, and a smile.</p></div>
+    <div class="why-card"><div class="why-ic">💎</div><div class="why-en">Premium Quality</div><span class="why-ur">اعلیٰ معیار</span><p class="why-desc">Every product carefully selected for durability, beauty, and value for your home.</p></div>
+    <div class="why-card"><div class="why-ic">💰</div><div class="why-en">Affordable Prices</div><span class="why-ur">مناسب قیمتیں</span><p class="why-desc">We believe quality should be accessible to everyone. Best prices, always.</p></div>
+    <div class="why-card"><div class="why-ic">🚚</div><div class="why-en">Nationwide Delivery</div><span class="why-ur">پورے پاکستان میں ڈیلیوری</span><p class="why-desc">Order on Daraz and get delivery to your doorstep across Pakistan.</p></div>
+    <div class="why-card"><div class="why-ic">🤝</div><div class="why-en">Trusted Service</div><span class="why-ur">قابل اعتماد خدمت</span><p class="why-desc">Serving the Lahore community with honesty, integrity, and a smile.</p></div>
   </div>
 </section>
 
+<!-- STORES -->
 <section id="stores">
-  <div class="section-header">
-    <span class="section-tag-ur" style="color:var(--gold-soft);">ہماری دکانیں</span>
-    <span class="section-tag" style="color:var(--gold-soft);">Shop With Us</span>
-    <h2 class="section-title" style="color:var(--white);">Find Us <span style="color:var(--gold-bright);">Everywhere</span><span class="section-title-ur" style="color:var(--gold-pale);">ہمیں ہر جگہ تلاش کریں</span></h2>
-    <div class="section-rule"></div>
+  <div class="sec-hd">
+    <span class="sec-tag-ur" style="color:var(--go)">ہماری دکانیں</span>
+    <span class="sec-tag" style="color:var(--go)">Shop With Us</span>
+    <h2 class="sec-title" style="color:var(--w)">Find Us <span style="color:var(--gb)">Everywhere</span><span class="sec-title-ur" style="color:var(--gp)">ہمیں ہر جگہ تلاش کریں</span></h2>
+    <div class="sec-rule"></div>
   </div>
   <div class="stores-grid">
-    <div class="store-card">
-      <div class="store-icon">🏪</div>
-      <div class="store-title-en">Physical Store</div>
-      <span class="store-title-ur">فزیکل اسٹور</span>
-      <p class="store-desc">Allah Tawakkal Variety Store — Madina Market, Ismail Nagar Main Bazar, Chungi Amar Sidhu, Lahore 54760.</p>
-      <a href="https://maps.google.com/?q=Madina+Market+Ismail+Nagar+Chungi+Amar+Sidhu+Lahore" target="_blank" class="store-btn">Get Directions</a>
-    </div>
-    <div class="store-card">
-      <div class="store-icon">🛒</div>
-      <div class="store-title-en">Daraz Online Store</div>
-      <span class="store-title-ur">دراز آن لائن اسٹور</span>
-      <p class="store-desc">Shop our full range at Daraz.pk — Al Barkat Global Trading. Fast delivery, easy returns, all across Pakistan.</p>
-      <a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank" class="store-btn">Shop on Daraz</a>
-    </div>
+    <div class="store-card"><div class="store-ic">🏪</div><div class="store-en">Physical Store</div><span class="store-ur">فزیکل اسٹور</span><p class="store-desc">Allah Tawakkal Variety Store — Madina Market, Ismail Nagar Main Bazar, Chungi Amar Sidhu, Lahore 54760.</p><a href="https://maps.google.com/?q=Madina+Market+Ismail+Nagar+Chungi+Amar+Sidhu+Lahore" target="_blank" class="store-btn">Get Directions</a></div>
+    <div class="store-card"><div class="store-ic">🛒</div><div class="store-en">Daraz Online Store</div><span class="store-ur">دراز آن لائن اسٹور</span><p class="store-desc">Shop our full range at Daraz.pk — Al Barkat Global Trading. Fast delivery, easy returns across Pakistan.</p><a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank" class="store-btn">Shop on Daraz</a></div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-  <div class="section-header">
-    <span class="section-tag-ur">ہم سے رابطہ کریں</span>
-    <span class="section-tag">Contact Us</span>
-    <h2 class="section-title">Get In <span>Touch</span><span class="section-title-ur">رابطہ کریں</span></h2>
-    <div class="section-rule"></div>
+  <div class="sec-hd">
+    <span class="sec-tag-ur">ہم سے رابطہ کریں</span>
+    <span class="sec-tag">Contact Us</span>
+    <h2 class="sec-title">Get In <span>Touch</span><span class="sec-title-ur">رابطہ کریں</span></h2>
+    <div class="sec-rule"></div>
   </div>
   <div class="contact-grid">
     <div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📍</div>
-        <div class="contact-item-text">
-          <div class="contact-item-label">Store Address</div>
-          <div class="contact-item-val">Allah Tawakkal Variety Store<br/>Madina Market, Ismail Nagar Main Bazar,<br/>Chungi Amar Sidhu, Lahore, Punjab 54760</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📞</div>
-        <div class="contact-item-text">
-          <div class="contact-item-label">Phone / WhatsApp</div>
-          <div class="contact-item-val"><a href="tel:+923399923999">+92 339 9923999</a> (Work) &nbsp;|&nbsp; <a href="tel:+923200007262">+92 320 0007262</a> (Personal)</div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">📧</div>
-        <div class="contact-item-text">
-          <div class="contact-item-label">Email</div>
-          <div class="contact-item-val">
-            Store: <a href="mailto:info@albarkatglobal.com">info@albarkatglobal.com</a><br/>
-            Sales: <a href="mailto:sales@albarkatglobal.com">sales@albarkatglobal.com</a><br/>
-            CEO: <a href="mailto:ceo@albarkatglobal.com">ceo@albarkatglobal.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-item-icon">👤</div>
-        <div class="contact-item-text">
-          <div class="contact-item-label">Founder & CEO</div>
-          <div class="contact-item-val">Muhammad Umer Khalid</div>
-        </div>
-      </div>
-      <div class="social-row">
-        <a href="https://facebook.com/albarkatglobal" target="_blank" class="social-btn soc-fb">f Facebook</a>
-        <a href="https://instagram.com/albarkatglobal" target="_blank" class="social-btn soc-ig">📷 Instagram</a>
-        <a href="https://tiktok.com/@albarkatglobal" target="_blank" class="social-btn soc-tt">▶ TikTok</a>
-        <a href="https://linkedin.com/company/albarkatglobal" target="_blank" class="social-btn soc-li">in LinkedIn</a>
-        <a href="https://wa.me/923399923999" target="_blank" class="social-btn soc-wa">💬 WhatsApp</a>
+      <div class="ci"><div class="ci-ic">📍</div><div><div class="ci-lbl">Store Address</div><div class="ci-val">Allah Tawakkal Variety Store<br/>Madina Market, Ismail Nagar Main Bazar,<br/>Chungi Amar Sidhu, Lahore, Punjab 54760</div></div></div>
+      <div class="ci"><div class="ci-ic">📞</div><div><div class="ci-lbl">Phone / WhatsApp</div><div class="ci-val"><a href="tel:+923399923999">+92 339 9923999</a> (Work) &nbsp;|&nbsp; <a href="tel:+923200007262">+92 320 0007262</a> (Personal)</div></div></div>
+      <div class="ci"><div class="ci-ic">📧</div><div><div class="ci-lbl">Email</div><div class="ci-val">Store: <a href="mailto:info@albarkatglobal.com">info@albarkatglobal.com</a><br/>Sales: <a href="mailto:sales@albarkatglobal.com">sales@albarkatglobal.com</a><br/>CEO: <a href="mailto:ceo@albarkatglobal.com">ceo@albarkatglobal.com</a></div></div></div>
+      <div class="ci"><div class="ci-ic">👤</div><div><div class="ci-lbl">Founder & CEO</div><div class="ci-val">Muhammad Umer Khalid</div></div></div>
+      <div class="soc-row">
+        <a href="https://facebook.com/albarkatglobal" target="_blank" class="soc-btn soc-fb">f Facebook</a>
+        <a href="https://instagram.com/albarkatglobal" target="_blank" class="soc-btn soc-ig">📷 Instagram</a>
+        <a href="https://tiktok.com/@albarkatglobal" target="_blank" class="soc-btn soc-tt">▶ TikTok</a>
+        <a href="https://linkedin.com/company/albarkatglobal" target="_blank" class="soc-btn soc-li">in LinkedIn</a>
+        <a href="https://wa.me/923399923999" target="_blank" class="soc-btn soc-wa">💬 WhatsApp</a>
       </div>
     </div>
-    <div class="map-placeholder">
+    <div class="map-box">
       <div class="map-pin">📍</div>
-      <div class="map-addr">
-        Allah Tawakkal Variety Store<br/>
-        Madina Market, Ismail Nagar<br/>
-        Chungi Amar Sidhu, Lahore
-        <div class="map-addr-ur">اللہ توکل ورائٹی اسٹور، مدینہ مارکیٹ، لاہور</div>
-      </div>
-      <a href="https://maps.google.com/?q=Madina+Market+Ismail+Nagar+Chungi+Amar+Sidhu+Lahore" target="_blank" class="map-gmaps-btn">Open in Google Maps</a>
+      <div class="map-addr">Allah Tawakkal Variety Store<br/>Madina Market, Ismail Nagar<br/>Chungi Amar Sidhu, Lahore</div>
+      <span class="map-addr-ur">اللہ توکل ورائٹی اسٹور، مدینہ مارکیٹ، لاہور</span>
+      <a href="https://maps.google.com/?q=Madina+Market+Ismail+Nagar+Chungi+Amar+Sidhu+Lahore" target="_blank" class="map-btn">Open in Google Maps</a>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand-name">Al Barkat Global Trading</div>
-      <div class="footer-brand-ur">البرکت گلوبل ٹریڈنگ</div>
-      <p class="footer-tagline">Quality products for every home in Pakistan.<br/>ہر پاکستانی گھر کے لیے معیاری مصنوعات۔</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Quick Links</div>
-      <ul class="footer-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#stores">Our Stores</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank">Daraz Store</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Contact</div>
-      <ul class="footer-links">
-        <li><a href="tel:+923399923999">+92 339 9923999</a></li>
-        <li><a href="mailto:info@albarkatglobal.com">info@albarkatglobal.com</a></li>
-        <li><a href="mailto:sales@albarkatglobal.com">sales@albarkatglobal.com</a></li>
-        <li><a href="https://wa.me/923399923999">WhatsApp Us</a></li>
-      </ul>
-    </div>
+  <div class="ft-top">
+    <div><div class="ft-name">Al Barkat Global Trading</div><div class="ft-ur">البرکت گلوبل ٹریڈنگ</div><p class="ft-tag">Quality products for every home in Pakistan.<br/>ہر پاکستانی گھر کے لیے معیاری مصنوعات۔</p></div>
+    <div><div class="ft-col-t">Quick Links</div><ul class="ft-links"><li><a href="#about">About Us</a></li><li><a href="#products">Products</a></li><li><a href="#stores">Our Stores</a></li><li><a href="#contact">Contact</a></li><li><a href="https://www.daraz.pk/shop/stwdycy5/" target="_blank">Daraz Store</a></li></ul></div>
+    <div><div class="ft-col-t">Contact</div><ul class="ft-links"><li><a href="tel:+923399923999">+92 339 9923999</a></li><li><a href="mailto:info@albarkatglobal.com">info@albarkatglobal.com</a></li><li><a href="mailto:sales@albarkatglobal.com">sales@albarkatglobal.com</a></li><li><a href="https://wa.me/923399923999">WhatsApp Us</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2025 <span>Al Barkat Global Trading</span>. All Rights Reserved.</div>
-    <div class="footer-love">Made with ❤️ in Lahore, Pakistan 🇵🇰</div>
-  </div>
+  <div class="ft-bot"><div class="ft-copy">© 2025 <span>Al Barkat Global Trading</span>. All Rights Reserved.</div><div style="font-size:0.85rem;color:rgba(255,255,255,0.35)">Made with ❤️ in Lahore, Pakistan 🇵🇰</div></div>
 </footer>
 
-<a href="https://wa.me/923399923999" class="wa-float" target="_blank" title="Chat on WhatsApp">💬</a>
+<!-- WA FLOAT -->
+<a href="https://wa.me/923399923999" class="wa-float" target="_blank">💬</a>
+
+<!-- ADMIN TRIGGER (secret button bottom-left) -->
+<div id="admin-trigger" title="Admin" onclick="openAdmin()">⚙️</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-overlay">
+  <div class="admin-box">
+    <div class="admin-head">
+      <h2>⚙️ Admin Panel — Al Barkat</h2>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <!-- LOGIN -->
+    <div id="admin-login-sec" class="admin-login">
+      <p>Enter admin password to manage products</p>
+      <div class="form-grp"><label>Password</label><input type="password" id="admin-pass" placeholder="Enter password"/></div>
+      <button class="admin-btn admin-btn-p" onclick="adminLogin()">LOGIN</button>
+      <div class="admin-msg" id="login-msg"></div>
+    </div>
+    <!-- MAIN -->
+    <div id="admin-main-sec" class="admin-body" style="display:none">
+      <div class="tabs-admin">
+        <button class="tab-a active" onclick="adminTab('add',this)">➕ Add Product</button>
+        <button class="tab-a" onclick="adminTab('list',this)">📋 Manage Products</button>
+      </div>
+      <!-- ADD TAB -->
+      <div id="tab-add">
+        <div class="form-row">
+          <div class="form-grp"><label>Product Name (English)</label><input type="text" id="f-name" placeholder="e.g. Tea Cup & Saucer Set"/></div>
+          <div class="form-grp"><label>Product Name (Urdu)</label><input type="text" id="f-name-ur" placeholder="e.g. چائے کپ سیٹ"/></div>
+        </div>
+        <div class="form-grp"><label>Category</label>
+          <select id="f-cat">
+            <option value="Kitchenware & Dining">🍽️ Kitchenware & Dining</option>
+            <option value="Drinkware & Flasks">🧊 Drinkware & Flasks</option>
+            <option value="Home Décor & Collectibles">🏡 Home Décor & Collectibles</option>
+            <option value="Electronics & Appliances">🔌 Electronics & Appliances</option>
+            <option value="Kitchen Accessories">🧂 Kitchen Accessories</option>
+          </select>
+        </div>
+        <div class="form-grp"><label>Description</label><textarea id="f-desc" placeholder="Brief product description..."></textarea></div>
+        <div class="form-row">
+          <div class="form-grp"><label>Price (PKR) — 0 = on request</label><input type="number" id="f-price" placeholder="0" min="0"/></div>
+          <div class="form-grp"><label>Availability</label>
+            <select id="f-avail"><option value="true">✅ In Stock</option><option value="false">❌ Out of Stock</option></select>
+          </div>
+        </div>
+        <div class="form-grp"><label>WhatsApp Inquiry Message</label><input type="text" id="f-wa" placeholder="e.g. I'm interested in Tea Cup Set"/></div>
+        <button class="admin-btn admin-btn-p" onclick="addProduct()">➕ ADD PRODUCT</button>
+        <div class="admin-msg" id="add-msg"></div>
+      </div>
+      <!-- LIST TAB -->
+      <div id="tab-list" style="display:none">
+        <div class="prod-list-admin">
+          <h3>ALL PRODUCTS IN DATABASE</h3>
+          <div id="admin-prod-list"><p style="color:var(--tm);font-size:0.9rem">Loading...</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FIREBASE SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCcwlmb9qZZ_3Gc7tn0Bv3iptnuCnW639Q",
+    authDomain: "al-barkat-global.firebaseapp.com",
+    projectId: "al-barkat-global",
+    storageBucket: "al-barkat-global.firebasestorage.app",
+    messagingSenderId: "583566577455",
+    appId: "1:583566577455:web:a66a82d7b5690dcab45bda"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const ADMIN_PASSWORD = "AlBarkat@786";
+  let allProducts = [];
+  let currentFilter = 'all';
+
+  const catIcons = {
+    "Kitchenware & Dining":"🍽️",
+    "Drinkware & Flasks":"🧊",
+    "Home Décor & Collectibles":"🏡",
+    "Electronics & Appliances":"🔌",
+    "Kitchen Accessories":"🧂"
+  };
+
+  // ── Load Products ──
+  async function loadProducts() {
+    try {
+      const q = query(collection(db, "products"), orderBy("createdAt","desc"));
+      const snap = await getDocs(q);
+      allProducts = [];
+      snap.forEach(d => allProducts.push({id:d.id,...d.data()}));
+      document.getElementById('stat-prod').textContent = allProducts.length > 0 ? allProducts.length+'+' : '500+';
+      renderProducts(allProducts);
+    } catch(e) {
+      // Show static fallback if DB empty or error
+      renderFallback();
+    }
+  }
+
+  function renderProducts(list) {
+    const grid = document.getElementById('productsGrid');
+    if(!list.length){
+      grid.innerHTML = '<div class="prod-empty"><p style="font-family:Cinzel,serif;color:var(--gm)">No products in this category yet.<br/><small style="color:var(--tm)">Add products via the Admin Panel ⚙️</small></p></div>';
+      return;
+    }
+    grid.innerHTML = list.map(p => {
+      const icon = catIcons[p.category] || '📦';
+      const price = p.price && p.price > 0 ? `PKR ${Number(p.price).toLocaleString()}` : 'Price on Request';
+      const avail = p.available === true || p.available === 'true';
+      const waMsg = encodeURIComponent(p.waMessage || `I'm interested in ${p.name} — Al Barkat Global Trading`);
+      return `
+      <div class="prod-card" data-cat="${p.category}">
+        <div class="prod-card-top">
+          <div class="prod-icon">${icon}</div>
+          <div class="prod-cat">${p.category}</div>
+          <div class="prod-cat-ur">${p.nameUr||''}</div>
+        </div>
+        <div class="prod-body">
+          <div class="prod-name">${p.name}</div>
+          <div class="prod-desc">${p.description||''}</div>
+          <div class="prod-price">${price}</div>
+          <span class="prod-avail ${avail?'avail-yes':'avail-no'}">${avail?'✅ In Stock':'❌ Out of Stock'}</span>
+          <a href="https://wa.me/923399923999?text=${waMsg}" target="_blank" class="prod-wa">💬 Inquire on WhatsApp</a>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderFallback() {
+    const fallback = [
+      {category:"Kitchenware & Dining",name:"Tea Cup & Saucer Set",description:"Beautiful floral, gold trim & blue patterned designs.",price:0,available:true},
+      {category:"Kitchenware & Dining",name:"Dinner Plates",description:"Large, medium and side plate sizes in quality ceramic.",price:0,available:true},
+      {category:"Drinkware & Flasks",name:"Insulated Thermos Flask",description:"Available in Red, Blue & Silver. Keeps drinks hot/cold.",price:0,available:true},
+      {category:"Home Décor & Collectibles",name:"Table Lamps",description:"Pink, White & Blue floral shades to brighten your home.",price:0,available:true},
+      {category:"Electronics & Appliances",name:"Digital Kitchen Scale",description:"Accurate Silver/Black digital scale for your kitchen.",price:0,available:true},
+      {category:"Kitchen Accessories",name:"Salt & Pepper Grinders",description:"Red Chef style, Clear acrylic & Stainless steel options.",price:0,available:true},
+    ];
+    allProducts = fallback;
+    renderProducts(fallback);
+  }
+
+  // ── Filter ──
+  window.filterProducts = function(cat, btn) {
+    currentFilter = cat;
+    document.querySelectorAll('.prod-tab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filtered = cat === 'all' ? allProducts : allProducts.filter(p=>p.category===cat);
+    renderProducts(filtered);
+  };
+
+  // ── Admin ──
+  window.openAdmin = () => document.getElementById('admin-overlay').classList.add('open');
+  window.closeAdmin = () => document.getElementById('admin-overlay').classList.remove('open');
+
+  window.adminLogin = function() {
+    const pass = document.getElementById('admin-pass').value;
+    const msg = document.getElementById('login-msg');
+    if(pass === ADMIN_PASSWORD) {
+      document.getElementById('admin-login-sec').style.display='none';
+      document.getElementById('admin-main-sec').style.display='block';
+    } else {
+      msg.textContent='❌ Incorrect password. Try again.';
+      msg.className='admin-msg msg-err';
+      msg.style.display='block';
+    }
+  };
+
+  window.adminTab = function(tab, btn) {
+    document.querySelectorAll('.tab-a').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-add').style.display = tab==='add'?'block':'none';
+    document.getElementById('tab-list').style.display = tab==='list'?'block':'none';
+    if(tab==='list') loadAdminList();
+  };
+
+  window.addProduct = async function() {
+    const msg = document.getElementById('add-msg');
+    const name = document.getElementById('f-name').value.trim();
+    const nameUr = document.getElementById('f-name-ur').value.trim();
+    const category = document.getElementById('f-cat').value;
+    const description = document.getElementById('f-desc').value.trim();
+    const price = parseFloat(document.getElementById('f-price').value)||0;
+    const available = document.getElementById('f-avail').value === 'true';
+    const waMessage = document.getElementById('f-wa').value.trim() || `I'm interested in ${name}`;
+    if(!name){msg.textContent='❌ Product name is required.';msg.className='admin-msg msg-err';msg.style.display='block';return;}
+    try {
+      await addDoc(collection(db,"products"),{name,nameUr,category,description,price,available,waMessage,createdAt:new Date().toISOString()});
+      msg.textContent='✅ Product added successfully!';
+      msg.className='admin-msg msg-ok';
+      msg.style.display='block';
+      ['f-name','f-name-ur','f-desc','f-price','f-wa'].forEach(id=>document.getElementById(id).value='');
+      await loadProducts();
+      setTimeout(()=>msg.style.display='none',3000);
+    } catch(e){
+      msg.textContent='❌ Error: '+e.message;
+      msg.className='admin-msg msg-err';
+      msg.style.display='block';
+    }
+  };
+
+  async function loadAdminList() {
+    const el = document.getElementById('admin-prod-list');
+    try {
+      const snap = await getDocs(collection(db,"products"));
+      if(snap.empty){el.innerHTML='<p style="color:var(--tm);font-size:0.9rem">No products yet. Add some!</p>';return;}
+      el.innerHTML = '';
+      snap.forEach(d => {
+        const p = d.data();
+        el.innerHTML += `<div class="admin-prod-item"><div><div class="api-name">${p.name}</div><div class="api-cat">${p.category}</div></div><button class="api-del" onclick="deleteProduct('${d.id}')">🗑 Delete</button></div>`;
+      });
+    } catch(e){el.innerHTML='<p style="color:#c00">Error loading products.</p>';}
+  }
+
+  window.deleteProduct = async function(id) {
+    if(!confirm('Delete this product?')) return;
+    try {
+      await deleteDoc(doc(db,"products",id));
+      await loadProducts();
+      await loadAdminList();
+    } catch(e){alert('Error deleting: '+e.message);}
+  };
+
+  // ── INIT ──
+  loadProducts();
+
+  // Enter key on password
+  document.getElementById('admin-pass').addEventListener('keydown', e => { if(e.key==='Enter') window.adminLogin(); });
+</script>
 
 <script>
   function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
